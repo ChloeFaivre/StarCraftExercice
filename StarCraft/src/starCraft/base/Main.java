@@ -3,9 +3,15 @@ package starCraft.base;
 public class Main {
 
 	public static void main(String[] args){
-	    String [] nom = new String[1];
-	    nom[0] = "RobinLaMouette";
+		
+	    System.out.println("Bienvenue dans chlocraft : " + args[0] );
+
+	    Marine gibbs = new Marine("Gibbs");
+	    Marine raynor = new Marine("Raynor");
 	    
-	    System.out.println("Bienvenue dans chlocraft : " + nom[0] );
+	    gibbs.attack(raynor);
+	    while(raynor.getHealthPoint() > 0 ) {
+	    	gibbs.attack(raynor);
+	    }
 	}
 }
