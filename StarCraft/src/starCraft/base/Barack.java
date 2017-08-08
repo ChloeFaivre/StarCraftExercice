@@ -3,18 +3,17 @@ package starCraft.base;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Baracks {
-	
-	public void train(List<String> listNom){
-		List<String> listeNom = new ArrayList<String>();
+public class Barack {
 		
-		//ajoute nom du Marine
-		listeNom.add("");
+	public List<Marine> train(List<String> namesMarine){
+		List<Marine> marines = new ArrayList<Marine>();
 		
-		for(int i = 0; i < listeNom.size(); i++){
-			System.out.println("Creation du Marine " + listeNom.get(i));
+		for(String name : namesMarine){
+			Marine myMarine = new Marine(name);
+			namesMarine.add(myMarine.getName());
+			marines.add(myMarine);
 		}
-		
-	}
 
+		return marines;	
+	}
 }
