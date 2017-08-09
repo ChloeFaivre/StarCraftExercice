@@ -20,9 +20,15 @@ public class Main {
 		List<Marine> marines = barack.train(namesMarine);
 		Marine martin = barack.train("Martin");
 		
-//	    gibbs.attack(raynor);
-//		while (raynor.getHealthPoint() > 0) {
-//			gibbs.attack(raynor);
-//		}
+		namesMarine.add("Martin");
+		
+		System.out.println(namesMarine);
+		
+		for(int i = 0; i< marines.size() ; i++){
+			martin.attack(marines.get(i));
+			while (marines.get(i).getHealthPoint() > 0){
+				martin.attack(marines.get(i));
+			}
+		}
 	}
 }
