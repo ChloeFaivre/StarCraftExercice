@@ -13,6 +13,6 @@ public class Main {
 			gibbs.attack(raynor);
 		}*/
 		
-		Barack raynor = new Barack("Raynor");
+		Barack raynor = new Barack();
 	}
 }

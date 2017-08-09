@@ -14,7 +14,7 @@ public class Barack {
 	}*/
 	
 	public Barack train(String namesMarine){
-		Marine myMarine = new Marine(name);
+		Barack myMarine = new Barack();
 		
 		return myMarine;
 	}
