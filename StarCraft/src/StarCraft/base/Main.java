@@ -24,11 +24,12 @@ public class Main {
 		marines.add(martin);
 		
 		System.out.println(marines);
+		System.out.println(marines.get(1));
 		
 		for(int i = 0; i< marines.size() ; i++){
-			martin.attack(marines.get(i));
+			marines.get(1).attack(marines.get(i));
 			while (marines.get(i).getHealthPoint() > 0){
-				martin.attack(marines.get(i));
+				marines.get(1).attack(marines.get(i));
 			}
 		}
 	}
