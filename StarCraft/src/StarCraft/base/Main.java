@@ -27,6 +27,9 @@ public class Main {
 		System.out.println(marines.get(1));
 		
 		for(int i = 0; i< marines.size() ; i++){
+			if(marines.get(i) == marines.get(1)){
+				continue;
+				}
 			marines.get(1).attack(marines.get(i));
 			while (marines.get(i).getHealthPoint() > 0){
 				marines.get(1).attack(marines.get(i));
