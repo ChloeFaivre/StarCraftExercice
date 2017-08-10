@@ -11,7 +11,8 @@ public class Main {
 	    /*Marine gibbs = new Marine("Gibbs");*/
 		Barack barack = new Barack();
 		
-		List<String> namesMarine = new ArrayList<>();		
+		List<String> namesMarine = new ArrayList<>();	
+		
 		namesMarine.add("Raynor");
 		namesMarine.add("Jim");
 		namesMarine.add("Tychus");
@@ -19,10 +20,10 @@ public class Main {
 				
 		List<Marine> marines = barack.train(namesMarine);
 		Marine martin = barack.train("Martin");
+		//attaquer liste Marine 
+		marines.add(martin);
 		
-		namesMarine.add("Martin");
-		
-		System.out.println(namesMarine);
+		System.out.println(marines);
 		
 		for(int i = 0; i< marines.size() ; i++){
 			martin.attack(marines.get(i));
