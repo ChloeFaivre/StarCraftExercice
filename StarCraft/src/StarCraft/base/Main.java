@@ -34,7 +34,7 @@ public class Main {
 		
 		//System.out.println(marines);
 		//System.out.println(marines.get(1));
-		
+		//Revoir le tout pour modifier en map
 		for(int i = 0; i< marines.size() ; i++){
 			if(marines.get(i) == marines.get(1)){
 				continue;
