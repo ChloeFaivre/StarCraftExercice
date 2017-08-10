@@ -1,4 +1,4 @@
-package src.StarCraft.base;
+package StarCraft.base;
 
 public class Marine {
 

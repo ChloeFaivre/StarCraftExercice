@@ -3,6 +3,9 @@ package src.StarCraft.base;
 import java.util.ArrayList;
 import java.util.List;
 
+import StarCraft.base.Barack;
+import StarCraft.base.Marine;
+
 public class Main {
 
 	public static void main(String[] args){
@@ -35,5 +38,13 @@ public class Main {
 				marines.get(1).attack(marines.get(i));
 			}
 		}
+		
+		//une solution ou raynor est le champion
+		for(int i = 1; i< marines.size() ; i++){
+			while (marines.get(i).getHealthPoint() > 0){
+				marines.get(0).attack(marines.get(i));
+			}
+		}
+		
 	}
 }
