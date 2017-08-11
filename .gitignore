@@ -33,3 +33,8 @@ hs_err_pid*
 /bin/
 >>>>>>> master
 /target/
+/.gitignore
+/.classpath
+/.project
+!/.gitignore
+/README.md
