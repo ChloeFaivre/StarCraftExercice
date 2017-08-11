@@ -8,10 +8,6 @@ import java.util.Map;
 import src.StarCraft.base.Barack;
 import src.StarCraft.base.Marine;
 
-
-import StarCraft.base.Barack;
-import StarCraft.base.Marine;
-
 public class Main {
 
 	public static void main(String[] args){
@@ -20,18 +16,21 @@ public class Main {
 	    /*Marine gibbs = new Marine("Gibbs");*/
 		Barack barack = new Barack();
 		
-		Map<Integer, String> namesMarine = new HashMap<>();	
+		List<String> namesMarine = new ArrayList<>();	
 		
-		namesMarine.put(1, "Raynor");
-		namesMarine.put(2, "Jim");
-		namesMarine.put(3, "Tychus");
-		namesMarine.put(4, "Cortana");
+		namesMarine.add("Raynor");
+		namesMarine.add("Jim");
+		namesMarine.add("Tychus");
+		namesMarine.add("Cortana");
 				
-		List<Marine> marines = barack.train(namesMarine);
+		Map<Integer, Marine> marines = new HashMap<>();
+		//Map<Integer, Marine> marines = new HashMap<Integer, barack.train(namesMarine)>();
+		marines.put(key, barack.train(namesMarine));
 		Marine martin = barack.train("Martin");
 		//attaquer liste Marine 
 		marines.add(martin);
 		
+		//List<Marine> marines = barack.train(namesMarine);
 		//System.out.println(marines);
 		//System.out.println(marines.get(1));
 		//Revoir le tout pour modifier en map
