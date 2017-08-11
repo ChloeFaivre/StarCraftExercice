@@ -29,12 +29,24 @@ public class Main {
 		marines.put(1, martin);
 		
 		
-		namesMarine[10];
+		namesMarine[10];// ==> ceci est un tableau d'une taille 10 c'est pas bien on fait des list
 
 		for (i = 0; i < 10; i++) {
 			Marine marine = New Marine(nameList[i]);
 			myMap.put(nameList[i], marine);
 		}
+		
+		
+		
+		//Tout d'abord j'instancie une map qui va prendre comme cle (==key, ==k) une string (== nom du marine) et comme valeur un objet de type marine
+		//Ensuite comme j'ai une liste avec tout les noms des marines, je vais boucler sur tous ces marines.
+		//pour chacun de ses nom de marines je vais :
+		// 			créer un marine
+		// 			et l'ajouter à ma map (avec pour clé le nom du marine et pour valeur le marine nouvellement créer)
+		
+		
+		
+		
 		//List<Marine> marines = barack.train(namesMarine);
 		System.out.println(marines);
 		//System.out.println(marines.get(1));
