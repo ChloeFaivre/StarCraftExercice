@@ -22,13 +22,21 @@ public class Main {
 				
 		Map<Integer, Marine> marines = new HashMap<>();
 		//Map<Integer, Marine> marines = new HashMap<Integer, barack.train(namesMarine)>();
-		marines.put(key, barack.train(namesMarine));
+		//marines.put(key, barack.train(namesMarine));
+		//marines.put(Index, namesMarine);
 		Marine martin = barack.train("Martin");
 		//attaquer liste Marine 
-		marines.add(martin);
+		marines.put(1, martin);
 		
+		
+		namesMarine[10];
+
+		for (i = 0; i < 10; i++) {
+			Marine marine = New Marine(nameList[i]);
+			myMap.put(nameList[i], marine);
+		}
 		//List<Marine> marines = barack.train(namesMarine);
-		//System.out.println(marines);
+		System.out.println(marines);
 		//System.out.println(marines.get(1));
 		//Revoir le tout pour modifier en map
 		for(int i = 0; i< marines.size() ; i++){
