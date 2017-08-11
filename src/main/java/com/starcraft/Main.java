@@ -1,4 +1,4 @@
-package base;
+package com.starcraft;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,10 +20,10 @@ public class Main {
 		namesMarine.add("Tychus");
 		namesMarine.add("Cortana");
 				
-		Map<Integer, starcraft.base.Marine> marines = new HashMap<>();
+		Map<Integer, Marine> marines = new HashMap<>();
 		//Map<Integer, Marine> marines = new HashMap<Integer, barack.train(namesMarine)>();
 		marines.put(key, barack.train(namesMarine));
-		starcraft.base.Marine martin = barack.train("Martin");
+		Marine martin = barack.train("Martin");
 		//attaquer liste Marine 
 		marines.add(martin);
 		

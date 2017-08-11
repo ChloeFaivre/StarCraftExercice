@@ -1,21 +1,21 @@
-package base;
+package com.starcraft;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Barack {
 	
-	public List<src.StarCraft.base.Marine> train(List<String> namesMarine){
-		List<src.StarCraft.base.Marine> marines = new ArrayList<>();
+	public List<Marine> train(List<String> namesMarine){
+		List<Marine> marines = new ArrayList<>();
 		for(String name : namesMarine){
-			src.StarCraft.base.Marine myMarine = new src.StarCraft.base.Marine(name);
+			Marine myMarine = new Marine(name);
 			marines.add(myMarine);
 		}
 		return marines;	
 	}
 	
-	public src.StarCraft.base.Marine train(String namesMarine){
-		src.StarCraft.base.Marine myMarine = new src.StarCraft.base.Marine(namesMarine);
+	public Marine train(String namesMarine){
+		Marine myMarine = new Marine(namesMarine);
 		
 		return myMarine;
 	}
